@@ -1791,10 +1791,11 @@ select {
     height: 100%;
     background-color: #fff;
     border-right: 1px solid rgb(233, 233, 233);
-    left: -100%;
+    left: 300px;
     transition: all .4s ease;
     display: block;
     z-index: 999 !important;
+    overflow: hidden;
   }
 
   .nav-logo {
