@@ -2068,6 +2068,10 @@ select {
   .top-footer-grid {
     grid-template-columns: 1fr;
   }
+
+  .header-right div {
+    margin-left: 10px;
+  }
 } 
 
 
