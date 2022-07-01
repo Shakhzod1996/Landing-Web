@@ -15,7 +15,7 @@ const nav = document.querySelector(".nav");
 
 
 // ?Swiper Js
-const swiper = new Swiper(".swiper", {
+new Swiper(".swiper1", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
@@ -37,7 +37,7 @@ const swiper = new Swiper(".swiper", {
 
 // ?Language onclick
 langChange.addEventListener("click", () => {
-  moreLanguage.classList.toggle("more-lang-open");
+  moreLanguage.classList.add("more-lang-open");
   menuModalBack.classList.add("menu-modal-back-show");
 });
 
@@ -49,6 +49,7 @@ rate.addEventListener("click", () => {
 
 // ?Menu onclick
 menuBtn.addEventListener("click", () => {
+  console.log("qwerty");
   menuA.classList.toggle("active");
   menuModal.classList.toggle("menu-modal-grid-show");
   menuModalBack.classList.add("menu-modal-back-show");
@@ -64,6 +65,13 @@ menuModalBack.addEventListener("click", () => {
   nav.classList.remove("nav-show")
 
 });
+
+// ? Toggle Menu
+toggleMenu.addEventListener("click", () => {
+  nav.classList.toggle("nav-show")
+  menuModalBack.classList.add("menu-modal-back-show");
+
+})
 
 
 // ? Filter Buttons
@@ -96,12 +104,9 @@ for (let i = 0; i < totalFilterBtn; i++) {
   });
 }
 
-// ? Toggle Menu
-toggleMenu.addEventListener("click", () => {
-  nav.classList.toggle("nav-show")
-  menuModalBack.classList.add("menu-modal-back-show");
 
-})
+
+
 
 
 
