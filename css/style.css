@@ -2304,7 +2304,7 @@ select {
     width: 300px;
     height: 100%;
     background-color: #fff;
-    border-right: 1px solid rgb(233, 233, 233);
+    border-right: 1px solid rgb(215, 215, 215);
     left: -300px;
     transition: all 0.4s ease;
     display: block;
@@ -2317,7 +2317,8 @@ select {
   }
 
   .menu-modal-back {
-    left: 300px;
+    /* left: 300px; */
+    z-index: -100 !important;
   }
 
   .logo-flex {
