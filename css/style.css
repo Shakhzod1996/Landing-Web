@@ -638,9 +638,10 @@
   position: absolute;
   left: 20px;
   right: 20px;
+  bottom: 20px;
   background-color: #ffffff;
   top: 20px;
-  height: 255px;
+  height: 235px;
   transition: all 0.4s ease;
   opacity: 0;
 }
@@ -991,12 +992,12 @@
 }
 
 .search-container {
-  width: 50%;
+  width: 30%;
   border: 2px solid #bcddfe;
 }
 
 .search-container input {
-  width: 85%;
+  width: 79%;
   padding: 10px;
   border: none;
   outline: none;
@@ -1005,7 +1006,7 @@
 
 .search-container button {
   font-size: 18px;
-  width: 14.2%;
+  width: 20%;
   padding-top: 10px;
   padding-bottom: 10px;
   border: 1px solid #40bfff;
@@ -1217,13 +1218,20 @@ footer {
 }
 
 .left-top-deal ul li a:hover {
-  color: #40bfff;
+  color: #40bfff !important;
 }
 
 .left-top-deal ul li a span {
   color: #22262a;
   opacity: 35%;
+  transition: all .4s ease;
 }
+
+.left-top-deal ul li a:hover span {
+  color: #40bfff !important;
+}
+
+
 
 .right-top-deal {
   width: 75%;
@@ -1531,7 +1539,22 @@ select {
   height: 276px !important;
 }
 
+
+
 .ul-block li::before {
+  content: "HOT";
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  padding: 5px 15px;
+  background-color: #ff4858;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 3px;
+}
+
+.ul-grid li:first-child:before {
   content: "HOT";
   position: absolute;
   top: 10px;
@@ -1606,6 +1629,19 @@ select {
   transition: all 0.4s ease;
   cursor: pointer;
   position: relative;
+}
+
+.ul-grid1 li::before {
+  content: "HOT";
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  padding: 5px 15px;
+  background-color: #ff4858;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 3px;
 }
 
 .for-hover1 {
@@ -2020,6 +2056,9 @@ select {
   border-radius: 5px;
   cursor: pointer;
   transition: all .4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .share-btns button a {
@@ -2192,6 +2231,14 @@ select {
 
   .product-information {
     width: 100%;
+  }
+
+  .search-div {
+    flex-direction: column;
+  }
+
+  .search-container button {
+    width: 100% !important;
   }
 }
 
@@ -2676,10 +2723,6 @@ select {
     width: 100px !important;
   }
 
-  .nike {
-    width: 120px;
-  }
-
   .product-h1 h1 {
     font-size: 25px;
   }
@@ -2743,9 +2786,10 @@ select {
     font-size: 12px;
   }
 
-  /* .related-h1 h1 {
-    font-size: 25px;
-  } */
+  .nike {
+    width: 120px !important;
+    height: 35px !important;
+  }
 }
 
 
