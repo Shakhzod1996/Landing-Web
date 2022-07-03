@@ -1650,7 +1650,7 @@ select {
   right: 20px;
   background-color: #ffffff;
   top: 20px;
-  height: 255px;
+  height: 235px;
   transition: all 0.4s ease;
   opacity: 0;
   display: flex;
@@ -1709,6 +1709,10 @@ select {
   align-items: center;
 }
 
+.pag-btns {
+  display: flex;
+}
+
 .pag-btns button {
   width: 62px;
   height: 56px;
@@ -1717,6 +1721,9 @@ select {
   font-size: 18px;
   font-weight: 400;
   transition: all 0.4s ease;
+  padding: 0 !important;
+  margin: 0 !important;
+
 }
 
 .pag-btns button:hover {
@@ -1737,7 +1744,6 @@ select {
 .for-grid {
   display: grid;
   grid-template-columns: 1fr 1.3fr 0.7fr;
-  /* justify-items: center; */
   grid-gap: 30px;
 }
 
